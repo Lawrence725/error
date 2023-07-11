@@ -1,0 +1,11 @@
+@import "./style.less";
+.error { width: 100dvw; height: 100dvh; border: 10px solid @cG1; gap: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+    @media @sT, @sD { flex-direction: row; }
+    .error__img { max-width: 300px; }
+    .error__info { max-width: 300px; display: flex; flex-direction: column; align-items: center; text-align: center;
+        @media @sT, @sD { align-items: flex-start; text-align: left; }}
+    .error__code { font-size: @fM; color: @cG4; }
+    .error__title { font-size: @fXXL; font-weight: bold; }
+    .error__message { font-size: @fL; color: @cG2; }
+    .error__action { width: 200px; height: 50px; margin-top: 40px; background-color: @cG1; }
+}
